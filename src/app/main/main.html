@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="jumbotron text-center">
+    <h1>#Merci @ Pierre !</h1>
+    <p class="lead">
+      <img src="assets/images/003438i8f7.jpg" width="100%" alt="Pierre"><br>
+      Postez et partagez votre message !
+      <p ng-show="main.postsCount">Déjà <a ui-sref="book">{{main.postsCount}} message(s)</a>.</p>
+    </p>
+    <p class="animated infinite" ng-class="main.classAnimation">
+      <button type="button" class="btn btn-lg btn-success" ng-click="main.showNew()">Poster</button>
+    </p>
+    
+  </div>
+
+</div>

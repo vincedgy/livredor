@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div>
+    <acme-navbar></acme-navbar>
+  </div>
+
+  <div class="jumbotron">    
+      <div class="text-left">
+
+        <ul class="list-group">
+          <li class="list-group-item" ng-repeat="post in vm.posts track by $index">
+            <p class="post">
+                <small style="color:gray">{{post.timestamp * 1000 | date:'Le dd-MM-yyyy à HH:mm:ss'}}
+                <strong><i>{{post.name}}</i></strong> a écrit : </small><br/>
+                "<quote>{{post.message}}</quote>"
+              </p>
+          </li>
+        </ul>
+
+  </div>
+
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+
+  <div>
+    <acme-navbar></acme-navbar>
+  </div>
+
+  <div class="jumbotron text-center">
+    <h3>Laissez un message dans le livre d'Or</h3>
+    <small style="color:red">/!\ Attention ce contenu sera partagé.</small>
+    
+    <form role="form">
+      
+      <fieldset class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Votre nom ou votre email" ng-model="vm.name">
+      </fieldset>
+      <br />
+      <fieldset class="form-group">   
+        <label class="control-label">Votre message</label>  
+        <textarea class="form-control" rows="5" id="message" ng-model="vm.message"></textarea>
+      </fieldset>
+
+      <p class="animated infinite" ng-class="main.classAnimation">
+        <button type="button" class="btn btn-primary" ng-click="vm.save()">OK</button>        
+      </p>
+       
+    </form>
+    
+  </div>
+
+</div>
